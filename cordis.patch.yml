@@ -1,0 +1,6 @@
+- insert:
+    - id: rea-kit
+      name: 'dsh-rea-kit'
+      config:
+        enabled: true
+        tool: true

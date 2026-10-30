@@ -1,0 +1,36 @@
+{
+  "name": "dsh-rea-kit",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "REA逆向方法论：五步循环+五类目标工具链+授权硬门 REA methodology: 5-step loop, toolchains for apk/native/electron/web/ctf, authorization gate.",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent",
+    "workflow"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@antinomyhq/forge": "*"
+  }
+}
